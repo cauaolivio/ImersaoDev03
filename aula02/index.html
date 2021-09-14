@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imersão Dev Alura - Aula 02</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="page-title">
+            Conversor de moedas
+        </h1>
+        <p class="page-subtitle">
+            Descubra os valores em real R$
+        </p>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
+            class="page-logo" alt=""><br><br>
+        <label for="moeda">Insira o valor</label><br>
+        <input type="number" id="value" size="2" /><br>
+
+        <button type="submit" onclick="convert()">Converter</button>
+
+        <h2 id="convertValue"></h2>
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+
+        <!-- JavaScript -->
+        <script src="logic.js"></script>
+</body>
+
+</html>
