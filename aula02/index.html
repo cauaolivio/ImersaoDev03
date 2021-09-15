@@ -24,6 +24,13 @@
         <label for="moeda">Insira o valor</label><br>
         <input type="number" id="value" size="2" /><br>
 
+        <select name="option" id="option">
+            <option value=""></option>
+            <option value="dollar">Dolár</option>
+            <option value="euro">Euro</option>
+            <option value="poundSterling">Libra Esterlina</option>
+        </select>
+
         <button type="submit" onclick="convert()">Converter</button>
 
         <h2 id="convertValue"></h2>
