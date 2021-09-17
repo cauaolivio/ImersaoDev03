@@ -34,9 +34,9 @@ body {
     right: 10px;
   }
   
-  #movieList img {
+  #moviePoster img {
     margin: 10px;
-    max-height: 250px;
+    max-height: 350px;
   }
   
   .form-wrapper {
