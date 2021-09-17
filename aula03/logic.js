@@ -44,6 +44,7 @@ function playAgain(params) {
     document.getElementById("btnPlay").disabled = true;
     document.getElementById("btnGuess").disabled = false;
 
+    document.getElementById("value").value = "";
     chances = 0;
     randomValue = parseInt(Math.random() * 11);
 }
