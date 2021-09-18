@@ -7,7 +7,28 @@ body {
     background-position: center bottom;
     background-repeat: no-repeat;
   }
-  
+  input {
+    margin: 12px;
+    padding: 6px;
+    border-radius: 5px;
+  }
+
+  label {
+    color: white;
+  }
+
+  button {
+    margin-top: 12px;
+    padding: 4px 8px;
+    border-radius: 10px;
+    background: #ffffff;
+  }
+
+  h2 {
+    color: #000000;
+    font-size: 24px;
+  }
+
   .container {
     text-align: center;
     padding: 20px;
