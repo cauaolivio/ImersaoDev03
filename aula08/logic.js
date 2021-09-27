@@ -5,7 +5,7 @@ let cards = [
         attributes: {
             humor: 90,
             agilidade: 100,
-            defesa: 40
+            tadinho: 40
         }
     },
     {
@@ -14,7 +14,7 @@ let cards = [
         attributes: {
             humor: 100,
             agilidade: 50,
-            defesa: 70
+            tadinho: 80
         }
     },
     {
@@ -23,7 +23,7 @@ let cards = [
         attributes: {
             humor: 75,
             agilidade: 40,
-            defesa: 30
+            tadinho: 95
         }
     },
     {
@@ -32,7 +32,7 @@ let cards = [
         attributes: {
             humor: 70,
             agilidade: 80,
-            defesa: 10
+            tadinho: 100
         }
     },
     {
@@ -41,7 +41,7 @@ let cards = [
         attributes: {
             humor: 77,
             agilidade: 10,
-            defesa: 70
+            tadinho: 20
         }
     },
 ]
