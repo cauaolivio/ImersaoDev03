@@ -38,7 +38,7 @@ function displaysPlayers(players) {
         element += `<td>${players[i].defeats}</td>`;
         element += `<td>${players[i].points}</td>`;
         element += `<td><button onClick="addVictory(${i})">Vitória</button></td>`;
-        element += `<td><button onClick="addDraw(${i})">Empate</button></td>`;
+        element += `<td><button onClick="addDraw()">Empate</button></td>`;
         element += `<td><button onClick="addDefeats(${i})">Derrota</button></td>`;
         element += `</tr>`
     }
@@ -53,20 +53,36 @@ function addVictory(i) {
 
     player.victories++;
     player.points = calculatePoints(player);
+
+    for (let x = 0; x < players.length; x++) {
+        if (players[x] != player) {
+            players[x].defeats++;
+            players[x].points = calculatePoints(players[x]);
+        }
+    }
+
     displaysPlayers(players);
 }
 
-function addDraw(i) {
-    let player = players[i];
-
-    player.draw++;
-    player.points = calculatePoints(player);
+function addDraw() {
+    for (let i = 0; i < players.length; i++) {
+        players[i].draw++;
+        players[i].points = calculatePoints(players[i]);
+    }
     displaysPlayers(players);
 }
 
 function addDefeats(i) {
     let player = players[i];
-
     player.defeats++;
+    player.points = calculatePoints(player);
+
+    for (let x = 0; x < players.length; x++) {
+        if (players[x] != player) {
+            players[x].victories++;
+            players[x].points = calculatePoints(players[x]);
+        }
+    }
+
     displaysPlayers(players);
 }
