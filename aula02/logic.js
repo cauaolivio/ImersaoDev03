@@ -1,4 +1,4 @@
-function convert() {
+function getData() {
     let select = document.getElementById("option").value;
 
     if (select == "dollar") {
@@ -56,4 +56,3 @@ function clearValues() {
 
     convertedValueElement.innerHTML = "";
 }
-
