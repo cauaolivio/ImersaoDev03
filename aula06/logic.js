@@ -57,7 +57,6 @@ function addVictory(i) {
     for (let x = 0; x < players.length; x++) {
         if (players[x] != player) {
             players[x].defeats++;
-            players[x].points = calculatePoints(players[x]);
         }
     }
 
@@ -75,7 +74,6 @@ function addDraw() {
 function addDefeats(i) {
     let player = players[i];
     player.defeats++;
-    player.points = calculatePoints(player);
 
     for (let x = 0; x < players.length; x++) {
         if (players[x] != player) {
