@@ -74,6 +74,18 @@ h2 {
     margin: 20px 10px;
 }
 
+.card-status div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card-status p {
+    margin-bottom: 2rem;
+    margin-left: 10px;
+    text-align: left;
+}
+
 .result-final {
     color: white;
     font-size: 2rem;
@@ -114,6 +126,3 @@ form {
     justify-content: space-between;
 }
 
-.card-status p {
-    margin-bottom: 2rem;
-}

@@ -104,7 +104,7 @@ function displayPlayerCard() {
 
     let optionsText = "";
     for (let attribute in cardPlayer.attributes) {
-        optionsText += `<input type="radio" name="attribute" value="${attribute}">` + attribute + " " + cardPlayer.attributes[attribute] + "<br>";
+        optionsText += `<div><input type="radio" name="attribute" value="${attribute}">` + attribute + " " + cardPlayer.attributes[attribute] + "</div>";
     }
 
     let name = `<p class="card-subtitle">${cardPlayer.name}</p>`;
