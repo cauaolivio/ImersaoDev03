@@ -1,16 +1,3 @@
-
-// // function to calculate the average
-// function a(g1, g2, g3, g4) {
-//     console.log(g1);
-//     if (!isNaN(g1) && g1 != 0 && !isNaN(g2) && g2 != 0 && !isNaN(g3) && g3 != 0 && !isNaN(g4) && g4 != 0) {
-//         let avarage = ((g1 + g2 + g3 + g4) / 4).toFixed(1);
-//         alert(`A média do aluno ${name} é de ${avarage}`);
-//     } else {
-//         alert("Dados inválidos!")
-//     }
-// }
-
-
 function calculateAvarage() {
     let grade01 = parseFloat(document.getElementById("grade01").value);
     let grade02 = parseFloat(document.getElementById("grade02").value);
