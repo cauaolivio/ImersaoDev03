@@ -5,7 +5,6 @@ function calculateAvarage() {
     let grade04 = parseFloat(document.getElementById("grade04").value);
 
     let message = document.getElementById("avarageMessage");
-
     if (!checkGrade(grade01, grade02, grade03, grade04)) {
         let avarage = ((grade01 + grade02 + grade03 + grade04) / 4).toFixed(1)
         message.innerHTML = `A média é ${avarage}`;
